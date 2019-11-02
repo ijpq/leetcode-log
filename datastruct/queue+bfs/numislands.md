@@ -20,47 +20,37 @@
 
 输出: 3
 
-## 思路 1 **超时,O(N^3)**
+## 思路 1 **AC**
 对每个点进行一次 BFS, BFS 访问到的点给 visited = 1, 每次从一个 unvisited 开始 BFS时, 累加一个岛屿, 跳过所有非岛屿的点.
 
+**这道题一开始报超时， 是由于 visited 处理的有问题，正确做法是由于在 check [i,j]的四个邻结点时，如果邻节点符合要求（未访问且是陆地）则 visited = 1。其中的道理就是在 BFS（假如图为 A->B,C->B）时，如果我们在当前结点（例如A）的广度搜索下，添加了一些邻节点(B)，那么这些邻节点就视为已经访问过了，如果下一轮在C的广度搜索时，就由于 B的访问标记，就不需要在 C 的轮次中添加其邻节点 B。**
+
 ```python
-import pdb
 class Solution(object):
-    def __init__(self):
-        print('init')
     def numIslands(self, grid):
         """
         :type grid: List[List[str]]
         :rtype: int
         """
         self.visited = [[0 for _ in range(len(grid[0]))] for _ in range(len(grid))]
-
         self.queue = []
-        # self.queue = [e for out in grid for e in out]
-        # self.queue[:] = 0
         self.count = 0
         self.grid = grid
 
         for i in range(len(self.grid)):
             for j in range(len(self.grid[0])):
                 if self.visited[i][j] != 1 and self.grid[i][j] == '1':  # not visted and island
-                    # pdb.set_trace()
                     self.count += 1
-                    print('count=',self.count)
                     self.queue.append((i, j))
-                    print('join {},{}'.format(i,j))
                     self.bfs(i, j)
-                # elif self.visited[i][i] == 1 :
-                #     continue
-                # elif self.
         return self.count
 
     def bfs(self, i, j):
         while len(self.queue) != 0:
+        # 这里的瑕疵是，在 BFS 中，正确的顺序应该是，1 添加邻节点， 2 出队
             x, y = self.pop()
-            self.visited[x][y] = 1
             self.check(x, y)
-
+            self.visited[x][y] = 1
         pass
 
     def pop(self):
@@ -74,28 +64,60 @@ class Solution(object):
         if i >= 0 and i <= (len(self.grid) - 1 ) and j >= 0 and j <= (len(self.grid[0]) - 1):
             if self.visited[i][j] != 1 and self.grid[i][j] == '1':
                 self.queue.append((i, j))
-                print('join {},{}'.format(i,j))
+                self.visited[i][j] = 1
 
     def check(self, i, j):
         self.check2(i-1,j)
-        # if i -1 >=0 :
-        #     if self.visited[i - 1][j] != 1 and self.grid[i -1 ][j]=='1':
-        #         self.queue.append((i -1 , j))
         self.check2(i+1,j)
-        # if i+1 <= len(self.grid) -1 :
-        #     if self.visited[i + 1][j] != 1 and self.grid[i+1][j]=='1' :
-        #         self.queue.append((i+1, j))
         self.check2(i,j-1)
-        # if j-1 >= 0 :
-        #     if self.visited[i][j - 1] != 1 and self.grid[i][j-1]=='1' :
-        #         self.queue.append((i, j-1))
         self.check2(i,j+1)
-        # if j+1 <= len(self.grid[0]) -1:
-        #     if self.visited[i][j + 1] != 1 and self.grid[i][j+1]=='1' :
-        #         self.queue.append((i, j+1))
 
-print('x')
-s = Solution()
-x = s.numIslands([["1","1","1","1","1","0","1","1","1","1","1","1","1","1","1","0","1","0","1","1"],["0","1","1","1","1","1","1","1","1","1","1","1","1","0","1","1","1","1","1","0"],["1","0","1","1","1","0","0","1","1","0","1","1","1","1","1","1","1","1","1","1"],["1","1","1","1","0","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],["1","0","0","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],["1","0","1","1","1","1","1","1","0","1","1","1","0","1","1","1","0","1","1","1"],["0","1","1","1","1","1","1","1","1","1","1","1","0","1","1","0","1","1","1","1"],["1","1","1","1","1","1","1","1","1","1","1","1","0","1","1","1","1","0","1","1"],["1","1","1","1","1","1","1","1","1","1","0","1","1","1","1","1","1","1","1","1"],["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],["0","1","1","1","1","1","1","1","0","1","1","1","1","1","1","1","1","1","1","1"],["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],["1","1","1","1","1","0","1","1","1","1","1","1","1","0","1","1","1","1","1","1"],["1","0","1","1","1","1","1","0","1","1","1","0","1","1","1","1","0","1","1","1"],["1","1","1","1","1","1","1","1","1","1","1","1","0","1","1","1","1","1","1","0"],["1","1","1","1","1","1","1","1","1","1","1","1","1","0","1","1","1","1","0","0"],["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"],["1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1","1"]])
-print(x)
 
+```
+## 思路 2 ,**AC**
+将思路 1 中的 visited 标志改为直接更改原矩阵中的值, 即访问过的点, 直接改为水'0', 这样就可以在之后的循环中因为不是陆地'1'而跳过
+```python
+class Solution(object):
+    def numIslands(self, grid):
+        """
+        :type grid: List[List[str]]
+        :rtype: int
+        """
+        self.queue = []
+        self.count = 0
+        self.grid = grid
+        for i in range(len(self.grid)):
+            for j in range(len(self.grid[0])):
+                if self.grid[i][j] == '1':  # island
+                    self.count += 1
+                    self.queue.append((i, j))
+                    self.bfs(i, j)
+        return self.count
+
+    def bfs(self, i, j):
+        while len(self.queue) != 0:
+            x, y = self.pop()
+            self.grid[x][y] = '0'
+            self.check(x, y)
+        pass
+
+    def pop(self):
+        # return current node and forward a index
+        x, y = self.queue[0]
+        self.queue = self.queue[1:]
+        return x, y
+        pass
+
+    def check2(self,i,j):
+        if i >= 0 and i <= (len(self.grid) - 1 ) and j >= 0 and j <= (len(self.grid[0]) - 1):
+            if self.grid[i][j] == '1':
+                self.queue.append((i, j))
+                self.grid[i][j]='0'
+
+    def check(self, i, j):
+        self.check2(i-1,j)
+        self.check2(i+1,j)
+        self.check2(i,j-1)
+        self.check2(i,j+1)
+
+```
