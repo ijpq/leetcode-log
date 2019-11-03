@@ -1,0 +1,94 @@
+## 第二题
+题目：5248. 统计「优美子数组」
+
+WA
+```python
+class Solution:
+    def numberOfSubarrays(self, nums: List[int], k: int) -> int:
+        count = 0
+        res = []
+        self.upperbound = pow(2,len(nums)) - 1
+        self.length = len(nums)
+        for decimal in range(self.upperbound+1):
+            binstr = self.decimal2bin(decimal)
+            # 将对应 = 1 的数选出组成子数组，判定
+            subarr = []
+            for s,i in enumerate(nums):
+                if binstr[s] == '1':
+                    subarr.append(i)
+            if self.checkodd(subarr,k) and subarr not in res:
+                print(res)
+                res.append(subarr)
+        if len(res) == 0:
+            return -1
+        else:
+            return len(res)
+
+            
+        
+    def decimal2bin(self, decimal):
+        string = bin(decimal)[2:]
+        ret = string.zfill(self.length)
+        # print(ret)
+        return ret
+    
+    def checkodd(self,nl,k): 
+        # print(nl,k)
+        count = 0
+        for num in nl:
+            if num%2 != 0:
+                count += 1
+        if count == k:
+            return True
+            # print(nl,k)
+        else:
+            return False
+```
+
+后发现必须连续子数组，且可以重复，故改为如下，但超时
+```python
+class Solution:
+    def numberOfSubarrays(self, nums: List[int], k: int) -> int:
+        count = 0
+        res = []
+        self.upperbound = pow(2,len(nums)) - 1
+        self.length = len(nums)
+        for decimal in range(self.upperbound+1):
+            binstr = self.decimal2bin(decimal)
+            #TODO 如果不连续 跳过
+            if not self.continu(binstr):
+                continue
+            
+            # 将对应 = 1 的数选出组成子数组，判定
+            subarr = []
+            for s,i in enumerate(nums):
+                if binstr[s] == '1':
+                    subarr.append(i)
+            if self.checkodd(subarr,k):
+                count += 1
+        return count
+
+    def continu(self,string):
+        left = string.find('1')
+        right = string.rfind('1')
+        subs = string[left:right+1]
+        if '0' in subs:
+            return False
+        else:
+            return True
+        
+    def decimal2bin(self, decimal):
+        string = bin(decimal)[2:]
+        ret = string.zfill(self.length)
+        return ret
+    
+    def checkodd(self,nl,k): 
+        count = 0
+        for num in nl:
+            if num%2 != 0:
+                count += 1
+        if count == k:
+            return True
+        else:
+            return False
+```
