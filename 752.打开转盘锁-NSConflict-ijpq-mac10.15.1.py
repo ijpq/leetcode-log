@@ -73,85 +73,34 @@
 # 
 #
 
-#bfs队列顺序，读取队头结点-》队头结点的邻节点入队-》访问队头-》出队
-
 # @lc code=start
-from queue import Queue
 class Solution:
-    def __init__(self):
-        print('1')
-    def openLock(self, deadends, target: str) -> int:
-        if '0000' in deadends:
-            return -1
-            
+    def openLock(self, deadends: List[str], target: str) -> int:
         self.start = '0000'
-        # self.queue = []
-        self.visited = {}
-        q= Queue()
-        self.deadends = set(deadends)
-        self.head, tail = 0,0
+        self.queue = [self.start]
         
-        step = 0
-        q.put(('0000',0))
-        # self.queue.append((self.start,step))
-        # self.tail = 1 
+        way_length = 0
+        while target not in self.queue:
+            self.queue.extend(increment(current))
         
-        # while not self.isempty():
-        while not q.empty():
-            #无解的条件是队空，但队列中没有出现过target
-            # 如果target出现在队列中可终止，或队空可终止
-            # current, step = self.queue[self.head]#取队头
-            current, step = q.get()
-            # self.visited[current] = 1#队头标记
-            if current not in self.deadends:
-                self.deadends.add(current)
+        way_length += 1
+        return 
+            
 
-            adj_node = self.increment(current)#找可行邻节点
-            if target in adj_node:
-                # return self.queue[self.head][1] + 1
-                return step + 1
-            if len(adj_node)!=0:
-                step +=1
-                # self.enqueue(adj_node,step)#林结点入队
-            for node in adj_node:
-                q.put((node,step))
-            # print(step)
-            # self.dequeue(current)
-
-    
-        return -1
-
-    def isempty(self):
-        return True if self.head == self.tail else False
-
-    def enqueue(self,node_list,step):
-        for node in node_list:
-            self.queue.append((node,step))
-            self.tail += 1
-
-    def dequeue(self,node):
-        self.head += 1
-
-    def increment(self,current:str):
-        # 死亡结点和访问过的结点不入队
+    def increment(self,current):
         assert isinstance(current,str),'type current error'
         ret = []
         for state in ['+','-']:
             for bit in range(len(current)):
                 if state == '+':
                     change_str = current[:bit]+str((int(current[bit])+1)%10)+current[bit+1:]
-                    if change_str in self.deadends:
-                        continue
                 if state == '-':
                     change_str = current[:bit]+str((int(current[bit])-1)%10)+current[bit+1:]
-                    if change_str in self.deadends:
-                        continue
                 ret.append(change_str)
         return ret
 
-s=Solution()   
-r=s.openLock(["8887","8889","8878","8898","8788","8988","7888","9888"],"8888")
-print('r',r)
+            
+
 
 """
 可以将转盘锁当前的状态视为二维平面图上的一个坐标点，与此点相邻的坐标点有八个，可以理解为相应的增加/减少每一位数字对应的新状态。通过BFS或dfs的方法，如果当前初始状态（或target）经过任何路径都无法达到target（或初始状态）
