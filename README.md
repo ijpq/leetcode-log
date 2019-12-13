@@ -1,2 +1,2 @@
-# leetcode-log
-记录刷题
+# FUCK IT
+
