@@ -135,6 +135,7 @@ class Solution:
 
     def increment(self,current:str):
         # 死亡结点和访问过的结点不入队
+        # 返回可行的邻节点
         assert isinstance(current,str),'type current error'
         ret = []
         for state in ['+','-']:
