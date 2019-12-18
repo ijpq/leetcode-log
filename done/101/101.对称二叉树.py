@@ -63,10 +63,7 @@ def check(que):
             j -= 1
             continue
         else:
-            # print('not sym')
             return False
-
-    # print('sym')
     return True
     pass
 
