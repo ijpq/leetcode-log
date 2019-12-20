@@ -37,16 +37,18 @@
 #
 
 # @lc code=start
+'''
+方法一，牛顿莱布尼茨公式
+F(x)表示第x天的股价，那么问题转化为max(F(b)-F(a))
+进一步转化为f(x)在a到b上的积分，f(x)应是F()的导函数，那么股价函数的导函数应该是[F(x+1)-F(x)]/[x+1-x],即相邻两天股价的差
+所以我们可以一遍计算出差值数组，一遍计算结果
+假设股价数据为第0天,...,第n-1天，共n天。
+diff[i]表示第i+1天和第i天的股价差,i从0到n-2
+'''
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        ans = prices[0]
-        res = 0
-        for i in range(1,len(prices)):
-            # diff = prices[i] - prices[i-1]
-            
-            
-            if ans[i] > res:
-                res = ans[i]
+        diff=[]
+        diff[0] = 
         return res
                 
             
