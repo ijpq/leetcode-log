@@ -125,7 +125,7 @@ class Solution:
 ---
 定义m[i]存储的是长度为i的众多解中,最小的序列末尾长度.
 这样的话,
-#########啊啊啊啊有点难 gg
+我们可以在当前的局面m[i]下,从后向前考察m[i-1],...,直到一个m[x]的值小于nums[i],此时m[x+1]的值更新为nums[i]啊啊啊不对不会了
 '''
 def binary_update(target,nums, m,left,right):
     # while left<right:
@@ -145,18 +145,17 @@ def binary_update(target,nums, m,left,right):
 
         
     pass
-
+import sys
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         if len(nums) == 0:
             return 0
-        m = [1 for _ in range(len(nums))]
-        m[0]=
+        m = [sys.maxsize for _ in range(len(nums))]
+        m[0]=nums[0]
         for i in range(1, len(nums)):
-            # for j in range(i):#TODO 将这个循环优化为二分查找
-            #     if nums[i] > nums[j]:
-            #         m[i] = max(m[i], m[j]+1)
+            for j in range(i):
+                pass
             
-        return max(m)
+        return res
 # @lc code=end
 
