@@ -110,5 +110,53 @@ class Solution:
 99.54%
 的用户
 '''
+
+
+
+'''
+结合二分查找的优化
+我们任何一个局面，从两个地方来，一个是维持局面，一个是之前的最大长度+1，所以m数组是递增的数组，所以在搜索‘之前的最大长度时，可以用二分查找，将O(n)的搜索优化到O(logn)’.
+但如果仍然在m中存储最长序列长度,即使找到合适的m[j],可以使m[i]更新,但nums[j]不一定能够小于nums[i],二分是无意义的
+---
+所以需要配合二分时,怎么将m存储的内容改一下,
+1.使得二分有意义呢,就是说使得二分找到的那个mid就是我们直接能需要的mid?
+2.如果更改了m存储的内容,那么之前n方解法的转移方程也需要改?
+3.如果m存储的内容不是递增的,那么二分就可以依据m的索引来进行.
+---
+定义m[i]存储的是长度为i的众多解中,最小的序列末尾长度.
+这样的话,
+#########啊啊啊啊有点难 gg
+'''
+def binary_update(target,nums, m,left,right):
+    # while left<right:
+    #     mid = (left + right) /2 
+        
+    #     if m[mid] + 1  <= m[target]: # 如果无法得到更新,则继续查找更大的m[x]
+    #         binary_update(target=target,nums,m,left=mid+1,right=right)
+    #     else:
+    #         if nums[mid] < nums[target]:
+    #             return 
+    #         else:
+    #             binary_update(target=target,nums,m,left=0,right=mid-1)
+        
+    # #最后一个可能更新的m[x]
+    # if 
+            
+
+        
+    pass
+
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0
+        m = [1 for _ in range(len(nums))]
+        m[0]=
+        for i in range(1, len(nums)):
+            # for j in range(i):#TODO 将这个循环优化为二分查找
+            #     if nums[i] > nums[j]:
+            #         m[i] = max(m[i], m[j]+1)
+            
+        return max(m)
 # @lc code=end
 
