@@ -37,6 +37,7 @@
 #
 
 # @lc code=start
+import sys
 '''
 方法一，牛顿莱布尼茨公式
 F(x)表示第x天的股价，那么问题转化为max(F(b)-F(a))
@@ -47,9 +48,27 @@ diff[i]表示第i+1天和第i天的股价差,i从0到n-2
 '''
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        diff=[]
-        diff[0] = 
-        return res
+        pass
+
+'''
+方法二
+这个思路是最基础的，我们考察第i天卖出股票能获得的最大收益，只需要关注前i-1天中最小值即可。
+'''
+
+
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        min_val = sys.maxsize
+        max_val = 0
+        for i in range(len(prices)):
+            if prices[i] < min_val:
+                min_val = prices[i]
+            max_profit = prices[i] - min_val
+            if max_profit > max_val:
+                max_val = max_profit
+        return max_val
+
+
                 
             
 
