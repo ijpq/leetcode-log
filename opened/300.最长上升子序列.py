@@ -126,6 +126,7 @@ class Solution:
 定义m[i]存储的是长度为i的众多解中,最小的序列末尾长度.
 这样的话,
 我们可以在当前的局面m[i]下,从后向前考察m[i-1],...,直到一个m[x]的值小于nums[i],此时m[x+1]的值更新为nums[i]啊啊啊不对不会了
+https://leetcode-cn.com/problems/longest-increasing-subsequence/solution/zui-chang-shang-sheng-zi-xu-lie-dong-tai-gui-hua-2/
 '''
 def binary_update(target,nums, m,left,right):
     # while left<right:
