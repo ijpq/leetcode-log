@@ -45,7 +45,7 @@ class Solution:
         ret = []
         stack = []
         
-        def gotoHLVFL(stack):# 最终会将当前子树的hlvfl节点放到栈顶,并沿途保存节点到栈;并且,在一个子树结构中,栈保存的顺序是根->右子树vlhfl(或右孩子),左孩子节点
+        def gotoHLVFL(stack):# 最终会将当前子树的hlvfl节点放到栈顶,并沿途保存节点到栈;
             while True:
                 top = stack[-1]
                 while top.left is not None:# 尽量往左
