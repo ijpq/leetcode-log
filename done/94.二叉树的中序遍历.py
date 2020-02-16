@@ -43,8 +43,8 @@ class Solution:
         ret = []
         stack = []
         
-        if root is None:
-            return root
+        # if root is None:
+        #     return root
 
         cur = root
 
@@ -55,9 +55,11 @@ class Solution:
                 stack.append(cur)
                 cur = cur.left
 
-            if len(stack) == 0: # current node is empty and no father node
+            # current node is empty and no father node.
+            # 一种是从上一轮的向右转来,如果转向右孩子却发现没有右孩子,且栈空则上一轮的访问节点是全局末尾节点
+            # 一种是起始轮,栈空,只能是空树,因此可删除root直接是None的判断
+            if len(stack) == 0: 
                 break
-
             cur = stack.pop()
 
             ret.append(cur.val) # visit current node
@@ -67,12 +69,6 @@ class Solution:
 
 
         return ret
-            
-
-#TODO while 条件改为栈空
-                
-            
-            
             
             
         

@@ -56,8 +56,9 @@
 
 # @lc code=start
 class Solution:
-    memo = {}
+    
     def fib(self, N: int) -> int:
+        memo = {}
         if N in memo.keys():
             return memo[N]
         else:
