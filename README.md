@@ -3,15 +3,14 @@
 #### done
 已结题
 
-#### temp
+#### opened
 `未AC,未整理的题`
 
-#### datastruct
-lc教程中，数据结构典型例题
+#### python experiment
+关于python编程的实现测试代码
 
 #### contest
 周赛
 
-#### abc
-傻逼文件夹
+
 
