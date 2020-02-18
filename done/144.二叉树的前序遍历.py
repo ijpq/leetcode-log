@@ -38,7 +38,7 @@
 #         self.val = x
 #         self.left = None
 #         self.right = None
-
+'''递归'''
 # class Solution:
 #     def preorderTraversal(self, root: TreeNode) -> List[int]:
 #         ret = []
@@ -54,25 +54,46 @@
 #             ret.extend(right)
         
 #         return ret
+
+'''自己写的迭代'''
+# class Solution:
+#     def preorderTraversal(self, root: TreeNode) -> List[int]:
+#         if root is None:
+#             return root
+#         ret = []
+#         stack = []
+#         stack.append(root)
+        
+#         while len(stack) != 0:
+#             cur = stack.pop()
+
+#             ret.append(cur.val) # eqs visit
+#             if cur.right is not None:
+#                 stack.append(cur.right)
+#             if cur.left is not None:
+#                 stack.append(cur.left)
+#         return ret
+
+'''标准版本迭代'''
 class Solution:
     def preorderTraversal(self, root: TreeNode) -> List[int]:
-        if root is None:
-            return root
-        ret = []
         stack = []
-        stack.append(root)
-        
-        while len(stack) != 0:
+        ret=[]
+        cur = root
+        while True:
+            
+            while cur is not None:
+                ret.append(cur.val)
+
+                if cur.right is not None:
+                    stack.append(cur.right)
+
+                cur = cur.left
+            if len(stack) == 0:
+                break
+
             cur = stack.pop()
-
-            ret.append(cur.val) # eqs visit
-            if cur.right is not None:
-                stack.append(cur.right)
-            if cur.left is not None:
-                stack.append(cur.left)
-
-
-        
         return ret
+
 # @lc code=end
 

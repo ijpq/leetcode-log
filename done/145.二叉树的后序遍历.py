@@ -60,19 +60,19 @@ class Solution:
                 
                 return 0
                 
-        ### scheme 1 ###
-        # stack.append(root)
-        # cur = root
-        # while True:
-        #     if len(stack)==0:
-        #         break
-        #     if stack[-1].left != cur and stack[-1].right != cur:#若栈顶节点不是当前节点的父节点,则必是当前节点的右兄弟节点.如果栈顶是当前节点的右兄弟节点,则根据栈顶节点,找vlhfl
-        #         gotoHLVFL(stack)
-        #         #print(stack) #MARK 打印栈以便理解
+        ## scheme 1 ###
+        stack.append(root)
+        cur = root
+        while True:
+            if len(stack)==0:
+                break
+            if stack[-1].left != cur and stack[-1].right != cur:#若栈顶节点不是当前节点的父节点,则必是当前节点的右兄弟节点.如果栈顶是当前节点的右兄弟节点,则根据栈顶节点,找vlhfl
+                gotoHLVFL(stack)
+                #print(stack) #MARK 打印栈以便理解
 
-        #     #如果栈顶节点是当前节点的父节点,或是当前节点右兄弟节点子树的vlhfl节点,则从栈顶开始
-        #     cur = stack.pop()
-        #     ret.append(cur.val)
+            #如果栈顶节点是当前节点的父节点,或是当前节点右兄弟节点子树的vlhfl节点,则从栈顶开始
+            cur = stack.pop()
+            ret.append(cur.val)
 
         ### scheme 2 ###
            
