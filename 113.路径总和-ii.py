@@ -49,29 +49,18 @@
 
 class Solution:
     def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
-        path = []
-        def preorderTraversal(self, root: TreeNode) -> List[int]:
+        def posttraverse(root):
             stack = []
-            ret=[]
-            cur = root
-            while True: 
-                
+            def gotoHLVFL(cur):
                 while cur is not None:
-                    #visit(cur)
-                    
-                    if qiuhe(path, cur.val) > sum:
-                        break
-                    path.append(cur.val)
-
+                    stack.append(cur)
                     if cur.right is not None:
                         stack.append(cur.right)
-
+                        
                     cur = cur.left
-                if len(stack) == 0:
-                    break
+                
 
-                cur = stack.pop()
-            return ret
+                    
                 
                 
                 
