@@ -45,15 +45,17 @@ class Solution:
         ret = []
         stack = []
         
-        def gotoHLVFL(stack):# 最终会将当前子树的hlvfl节点放到栈顶,并沿途保存节点到栈;
+        def gotoHLVFL(stack):
+            '''以栈顶节点为根节点,找当前子树的HLVFL节点, HLVFL highest leaf visible from left, highest means deepest'''
             while True:
                 top = stack[-1]
-                while top.left is not None:# 尽量往左
-                    if top.right is not None:# 先让右孩子入栈
+                while top.left is not None:# 为了达到当前子树的hlvfl节点,尽量往左走
+                    if top.right is not None:# 当前子树中有右孩子则先入右孩子
                         stack.append(top.right)
                     stack.append(top.left)
                     top = top.left
                 
+                #此时top到达当前一个阶段的最左侧节点,但如果还有右孩子,则必定有highest(deepest)的最左侧节点
                 if top.right is not None:
                     stack.append(top.right)
                     continue
@@ -64,8 +66,12 @@ class Solution:
         stack.append(root)
         cur = root
         while True:
+            #如果上一轮出栈后,全栈为空,则访问了整棵树的根节点
             if len(stack)==0:
                 break
+
+            # 什么时候需要找hlvfl? 
+            # 对于一个子树的结构中,总是左-右-中的顺序,如果cur是左,栈顶不是其父亲节点,则栈顶必为右兄弟.如果cur是右孩子,则栈顶必是父亲节点
             if stack[-1].left != cur and stack[-1].right != cur:#若栈顶节点不是当前节点的父节点,则必是当前节点的右兄弟节点.如果栈顶是当前节点的右兄弟节点,则根据栈顶节点,找vlhfl
                 gotoHLVFL(stack)
                 #print(stack) #MARK 打印栈以便理解
@@ -73,8 +79,6 @@ class Solution:
             #如果栈顶节点是当前节点的父节点,或是当前节点右兄弟节点子树的vlhfl节点,则从栈顶开始
             cur = stack.pop()
             ret.append(cur.val)
-
-        ### scheme 2 ###
            
         return ret
             

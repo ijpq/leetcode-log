@@ -47,19 +47,31 @@
 #         self.left = None
 #         self.right = None
 
-class Solution:
-    def pathSum(self, root: TreeNode, sum: int) -> List[List[int]]:
-        def posttraverse(root):
-            stack = []
-            def gotoHLVFL(cur):
-                while cur is not None:
-                    stack.append(cur)
-                    if cur.right is not None:
-                        stack.append(cur.right)
-                        
-                    cur = cur.left
-                
+'''先序遍历, 回溯'''
+#这里回溯的概念是因为:例如当前面临节点11,要先调用helper(左),此时面临节点7,此轮的左右孩子均为空节点,无返回.再回到面临节点11的轮,接下来调用helper(右)
+#面临节点2,找到答案,return.
 
+class Solution:
+    def pathSum(self, root: TreeNode, sum_: int) -> List[List[int]]:
+        
+        def helper(root, tmp, sum_):
+            if not root:
+                return
+            if not root.left and not root.right and sum_ - root.val == 0:
+                tmp += [root.val]
+                res.append(tmp)
+                return
+            helper(root.left, tmp + [root.val], sum_ - root.val)
+            helper(root.right, tmp + [root.val], sum_ - root.val)
+
+        res = []
+        helper(root, [], sum_)
+        return res
+
+
+
+
+        
                     
                 
                 
