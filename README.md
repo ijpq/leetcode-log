@@ -14,3 +14,20 @@
 
 
 
+```python
+'''OJ输入'''
+T, M = [int(x) for x in input().split()]
+
+time=[]
+value=[]
+for _ in range(M):
+    time_, value_ = [int(x) for x in input().split()]
+    time.append(time_)
+    value.append(value_)
+```
+
+```python
+'''OJ debug'''
+
+```
+
