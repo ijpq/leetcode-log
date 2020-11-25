@@ -1,27 +1,4 @@
 {
-    "tasks": [
-        {
-            "type": "shell",
-            "label": "C/C++: g++-7 build active file",
-            "command": "/usr/bin/g++-7",
-            "args": [
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
-            ],
-            "options": {
-                "cwd": "${workspaceFolder}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
-    ]
 	"version": "2.0.0",
 	"tasks": [
 		{
@@ -43,6 +20,28 @@
 			],
 			"group": "build",
 			"showOutput": "always",
-		}
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: g++-7 build active file",
+            "command": "/usr/bin/g++-7",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "--std=c++11",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
 	]
 }

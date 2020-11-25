@@ -1,12 +1,13 @@
 #include <string>
 #include<memory>
+#include<utility>
 using namespace std;
 class HasPtr{
     public:
         HasPtr(const std::string& s = std::string()):
             ps(new std::string(s)), i(0){}
 
-        HasPtr(string& s, int num):ps(new string(s)), i(num){}
+        HasPtr(const string& s, int num):ps(new string(s)), i(num){}
 
         HasPtr& operator=(const HasPtr& rhs_hp) { 
             if(this != &rhs_hp){
@@ -38,7 +39,7 @@ class HasPtr{
             return i < rhp.i;
         }
 
-        string& operator*() { return *ps;}
+        string& operator*() { return *ps; }
 
         friend void swap(HasPtr&, HasPtr&);
     private:

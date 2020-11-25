@@ -383,6 +383,7 @@ int main() {
     char* str = "abd";
     vector<int> vec{1, 5, 2, 7};
     char str2[] = "abd";
+    cout<<"h!"<<endl;
     // sort(vec.begin(), vec.end(), myobj);
     // cout << "sort vec: " ;
     // for (auto ele : vec) {
