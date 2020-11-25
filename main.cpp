@@ -292,5 +292,6 @@ public:
 int main(){
     Solution sol;
     sol.strStr("aaab","aab");
+    cout<<"ttt"<<endl;
     return 0;
 }
