@@ -114,33 +114,33 @@
 
 
 //sogou2
-class Solution
-{
-public:
-    int solve(int t, int *xa, int n)
-    {
-        int res = 0;
-        for (int i = 0; i < n; i += 2)
-        {
-            if (i == 0)
-                res++;
-            else
-            {
-                if (xa[i] * 2 - xa[i + 1] - t * 2 >= xa[i - 2] * 2 + xa[i - 1])
-                {
-                    res++;
-                }
-            }
-            if (i == n - 3)
-                res++;
-            else
-            {
-                if (xa[i] * 2 + xa[i + 1] + t * 2 < xa[i + 2] * 2 - xa[i + 3])
-                {
-                    res++;
-                }
-            }
-        }
-        return res;
-    }
-};
+//class Solution
+//{
+//public:
+//    int solve(int t, int *xa, int n)
+//    {
+//        int res = 0;
+//        for (int i = 0; i < n; i += 2)
+//        {
+//            if (i == 0)
+//                res++;
+//            else
+//            {
+//                if (xa[i] * 2 - xa[i + 1] - t * 2 >= xa[i - 2] * 2 + xa[i - 1])
+//                {
+//                    res++;
+//                }
+//            }
+//            if (i == n - 3)
+//                res++;
+//            else
+//            {
+//                if (xa[i] * 2 + xa[i + 1] + t * 2 < xa[i + 2] * 2 - xa[i + 3])
+//                {
+//                    res++;
+//                }
+//            }
+//        }
+//        return res;
+//    }
+//};

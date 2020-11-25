@@ -19,7 +19,7 @@
 				"$gcc"
 			],
 			"group": "build",
-			// "showOutput": "always",
+			"showOutput": "always",
 		}
 	]
 }
