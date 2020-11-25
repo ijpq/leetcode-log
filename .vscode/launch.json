@@ -36,7 +36,6 @@
         "environment": [],
         "externalConsole": false,
         "MIMode": "lldb",
-        // "miDebuggerPath": "/Users/ketang/.vscode/extensions/ms-vscode.cpptools-0.30.0-insiders4/debugAdapters/lldb-mi/bin/lldb-mi"
         
     },
         {

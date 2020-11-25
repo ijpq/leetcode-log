@@ -20,7 +20,7 @@
 // // using namespace std;
 // // map<string,int> dish;
 // // map<pair<string,string>,int> order;
- 
+
 // // int main()
 // // {
 // //     int n,m;
@@ -111,8 +111,8 @@
 // //     cout << dfs(0, 0, 0) << endl;
 // // }
 
-// #include 
-// #include 
+// #include
+// #include
 // #define sd(a) scanf("%d",&a)
 // using namespace std;
 // const int N=20+5;
@@ -231,16 +231,148 @@
 //     // int &c = a;
 //     // cout<<"gcc3"<<endl;
 
-    
+
 //     return 0;
 // }
 
+// #include <iostream>
+// #include <string>
+// #include <vector>
+// using namespace std;
+
+
+// class Solution {
+// public:
+//     void kmp(string& pattern, vector<int>& prefix){
+//         // static vector<int> prefix={0};
+//         int nLength = pattern.size();
+//         for (int i =1; i<pattern.size(); ++i){
+//             int j = 0, val =0, iptr=i;
+
+//             while (j < iptr){
+//                 if (pattern[j] == pattern[iptr]){
+//                     j += 1;
+//                     iptr -= 1;
+//                     val += 1;
+//                 }
+//                 else break;
+//             }
+//             prefix.push_back(val);
+//         }
+//         return;
+//     }
+//     int strStr(string haystack, string needle) {
+//         int length = needle.size();
+//         vector<int> prefix = {0};
+//         kmp(needle, prefix);
+//         int nptr = 0,ptr=0;
+//         for (ptr = 0; ptr < haystack.size(); ptr++){
+//             if (nptr == needle.size()){ // if haystack lager than needle
+//                 return ptr-nptr;
+//             }
+//             if (needle[nptr] != haystack[ptr]){ // find prefix
+//                 nptr = prefix[nptr-1];
+//                 ptr--;
+//             }
+//             else{
+//                 nptr++;
+//             }
+//         }
+//         if (nptr < length) return -1; // false
+//         if (nptr == length) {
+//             return ptr-nptr; // same length
+//         }
+//         return 0;
+
+
+//     }
+// };
+
+// #include<unordered_map>
+
+// int main(){
+//     string x{"11"};
+//     cout<<x[0]<<','<<x[0]-'0'<<endl;
+//     // float a = stof(".5e1");
+//     // char aa = 'z';
+//     // cout<<(int)aa<<endl;
+//     to_string(1);
+//     // cout<<a<<endl;
+//     Solution sol;
+//     sol.strStr("aaab","aab");
+//     unordered_map<string, vector<string>> stateMap{{"start", vector<string> {}}};
+//     vector<pair<int,int>> res;
+//     vector<vector<int>> ret{};
+//     res.push_back(make_pair(1,3));
+//     for (auto it : res){
+//         cout<<(it).first<<endl;
+//     }
+//     cout<<"yes"<<endl;
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// #include<algorithm>
+// #include<vector>
+// #include<stdlib.h>
+// #include<queue>
+// #include<iostream>
+// using namespace std;
+// bool cmp1(vector<int> &a, vector<int> &b)
+// {
+// 	return a[2] > b[2];
+// }
+// int main()
+// {
+// 	priority_queue<int, vector<int>, greater<int>> pq;
+// 	for (int i = 0; i < 10; i++)
+// 	{
+// 		for (int j = 0; j < 3; j++)
+// 		{
+// 			pq.push(rand() % 100);
+// 		}
+// 	}
+	
+// 	for (int i = 0; i < 10; i++)
+// 	{
+// 		for (int j = 0; j < 3; j++)
+// 		{
+// 			cout << viA[i][j] << "\t";
+// 		}
+// 		cout << endl;
+// 	}
+// 	cout << "按行排序后的输出" << endl;
+ 
+// 	//sort(viA.begin(), viA.end(), [](const vector<int> &a, const vector<int> &b) {return a[0] < b[0]; });
+ 
+// 	sort(viA.begin(), viA.end(), cmp1);
+// 	//for (int i = 0; i < 10; i++)
+// 	//{
+// 		//sort(viA.begin(), viA.end());//默认为从小到大排序
+// 	//}
+// 	for (int i = 0; i < 10; i++)
+// 	{
+// 		for (int j = 0; j < 3; j++)
+// 		{
+// 			cout << viA[i][j] << "\t";
+// 		}
+// 		cout << endl;
+// 	}
+// 	// while (1);
+ 
+// 	return 0;
+// }
+
+
+#include <queue>
 #include <iostream>
-#include <string>
 #include <vector>
+#include <algorithm>
+
 using namespace std;
 
-
+<<<<<<< HEAD
 class Solution {
 public:
     void kmp(string& pattern, vector<int>& prefix){
@@ -293,5 +425,40 @@ int main(){
     Solution sol;
     sol.strStr("aaab","aab");
     cout<<"ttt"<<endl;
+=======
+// struct cmp {
+//   bool operator () (int i,int j) { return (i < j); }
+// } myobj;
+
+
+
+
+int main() {
+    char* str = "abd";
+    vector<int> vec{1, 5, 2, 7};
+    char str2[] = "abd";
+    // sort(vec.begin(), vec.end(), myobj);
+    // cout << "sort vec: " ;
+    // for (auto ele : vec) {
+    //     cout << ele << " ";
+    // }
+    // cout << endl;
+
+    // priority_queue<int, vector<int>, cmp> heap;
+    // heap.push(7);
+    // heap.push(10);
+    // heap.push(1);
+    // heap.push(100);
+    // cout << "heap is: ";
+    // while (!heap.empty()) {
+    //     cout << heap.top() << " ";
+    //     heap.pop();
+    // }
+    // cout << endl;
+    // vector<vector<int>> b = {{1,1},{2,2,},{3,2},{0,0}};
+    // for (auto x:b){
+    //     cout<<x[0]<<","<<x[1]<<endl;
+    // }
+>>>>>>> b19ad1a00a544dc54bdd68ae6763415f21905087
     return 0;
 }
