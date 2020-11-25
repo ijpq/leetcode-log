@@ -372,60 +372,6 @@
 
 using namespace std;
 
-<<<<<<< HEAD
-class Solution {
-public:
-    void kmp(string& pattern, vector<int>& prefix){
-        // static vector<int> prefix={0};
-        int nLength = pattern.size();
-        for (int i =1; i<pattern.size(); ++i){
-            int j = 0, val =0, iptr=i;
-
-            while (j < iptr){
-                if (pattern[j] == pattern[iptr]){
-                    j += 1;
-                    iptr -= 1;
-                    val += 1;
-                }
-                else break;
-            }
-            prefix.push_back(val);
-        }
-        return;
-    }
-    int strStr(string haystack, string needle) {
-        int length = needle.size();
-        vector<int> prefix = {0};
-        kmp(needle, prefix);
-        int nptr = 0,ptr=0;
-        for (ptr = 0; ptr < haystack.size(); ptr++){
-            if (nptr == needle.size()){ // if haystack lager than needle
-                return ptr-nptr;
-            }
-            if (needle[nptr] != haystack[ptr]){ // find prefix
-                nptr = prefix[nptr-1];
-                ptr--;
-            }
-            else{
-                nptr++;
-            }
-        }
-        if (nptr < length) return -1; // false
-        if (nptr == length) {
-            return ptr-nptr; // same length
-        }
-        return 0;
-
-
-    }
-};
-
-
-int main(){
-    Solution sol;
-    sol.strStr("aaab","aab");
-    cout<<"ttt"<<endl;
-=======
 // struct cmp {
 //   bool operator () (int i,int j) { return (i < j); }
 // } myobj;
@@ -459,6 +405,5 @@ int main() {
     // for (auto x:b){
     //     cout<<x[0]<<","<<x[1]<<endl;
     // }
->>>>>>> b19ad1a00a544dc54bdd68ae6763415f21905087
     return 0;
 }
