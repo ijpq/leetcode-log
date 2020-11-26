@@ -80,15 +80,15 @@ include CMakeFiles/HasPtr.dir/flags.make
 CMakeFiles/HasPtr.dir/HasPtr.cpp.o: CMakeFiles/HasPtr.dir/flags.make
 CMakeFiles/HasPtr.dir/HasPtr.cpp.o: ../HasPtr.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ketang/Desktop/leetcode-log/c13_HasPtr/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HasPtr.dir/HasPtr.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HasPtr.dir/HasPtr.cpp.o -c /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp
+	/usr/local/bin/g++-8  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HasPtr.dir/HasPtr.cpp.o -c /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp
 
 CMakeFiles/HasPtr.dir/HasPtr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HasPtr.dir/HasPtr.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp > CMakeFiles/HasPtr.dir/HasPtr.cpp.i
+	/usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp > CMakeFiles/HasPtr.dir/HasPtr.cpp.i
 
 CMakeFiles/HasPtr.dir/HasPtr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HasPtr.dir/HasPtr.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp -o CMakeFiles/HasPtr.dir/HasPtr.cpp.s
+	/usr/local/bin/g++-8 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp -o CMakeFiles/HasPtr.dir/HasPtr.cpp.s
 
 # Object files for target HasPtr
 HasPtr_OBJECTS = \

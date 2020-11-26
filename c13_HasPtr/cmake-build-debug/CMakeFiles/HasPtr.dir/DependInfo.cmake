@@ -6,7 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp" "/Users/ketang/Desktop/leetcode-log/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/HasPtr.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
