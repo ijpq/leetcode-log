@@ -11,10 +11,20 @@ HasPtr.h
 /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.h
 string
 -
+iostream
+-
+vector
+-
+algorithm
+-
 
 /Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.h
 string
 -
 memory
+-
+utility
+-
+algorithm
 -
 

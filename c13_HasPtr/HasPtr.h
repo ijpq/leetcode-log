@@ -1,6 +1,7 @@
 #include <string>
 #include<memory>
 #include<utility>
+#include<algorithm>
 using namespace std;
 class HasPtr{
     public:
