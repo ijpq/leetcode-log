@@ -1,5 +1,5 @@
 
-#include"Message.h"
+#include"MsgFolder.h"
 #include<iostream>
 #include<string>
 
