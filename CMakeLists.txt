@@ -1,0 +1,8 @@
+project(main)
+
+add_subdirectory(c13_constructorexp)
+add_subdirectory(c13_HasPtr)add_subdirectory(c13_HasPtr2)
+add_subdirectory(c13_Employee)
+add_subdirectory(c13_msgfolder)
+add_subdirectory(c13_String)
+add_subdirectory(c13_strVec)

@@ -1,51 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="main" targetName="HasPtr" />
+      <config projectName="main" targetName="Point" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16e97528-fd16-43b8-871b-9b2c8d1cfd1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c13_constructorexp/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/c13_HasPtr/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/c13_HasPtr/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/HasPtr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/c13_HasPtr/HasPtr.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/HasPtr.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/Project.cbp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/c13_HasPtr/cmake-build-debug/hasptr.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/c13_constructorexp/Point" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.17.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/debug.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/leetcode.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leetcode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/leetcode.cbp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +64,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -65,6 +75,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JupyterTrust" id="348da673-80b4-4b29-90b4-143395454c8b" />
   <component name="ProjectId" id="1kjg64EtQZFyrq0MjC0OllCw4Cv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -75,15 +86,33 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+  <component name="RunManager" selected="CMake Application.Point">
+    <configuration name="HasPtr" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="main" TARGET_NAME="HasPtr" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="main" RUN_TARGET_NAME="HasPtr">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="leetcode" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" EXPLICIT_BUILD_TARGET_NAME="all">
+    <configuration name="Point" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="main" TARGET_NAME="Point" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="main" RUN_TARGET_NAME="Point">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leetcode" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="main" RUN_TARGET_NAME="Point" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -93,6 +122,11 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="CMake Application.leetcode" />
+      <item itemvalue="CMake Application.Point" />
+      <item itemvalue="CMake Application.HasPtr" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,6 +137,13 @@
       <option name="presentableId" value="Default" />
       <updated>1606219239171</updated>
       <workItem from="1606219242047" duration="743000" />
+      <workItem from="1606495439443" duration="34000" />
+      <workItem from="1606496158821" duration="152000" />
+      <workItem from="1606496728186" duration="2032000" />
+      <workItem from="1606498910238" duration="230000" />
+      <workItem from="1606570143885" duration="11000" />
+      <workItem from="1606619665702" duration="1131000" />
+      <workItem from="1606620805641" duration="703000" />
     </task>
     <servers />
   </component>
@@ -110,26 +151,39 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="446" y="213" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606219906650">
-      <screen x="43" y="23" width="1877" height="1057" />
+    <state x="588" y="196" width="800" height="712" key="#Plugins" timestamp="1606498901246">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="588" y="196" width="800" height="712" key="#Plugins/67.27.1853.1053@67.27.1853.1053" timestamp="1606498901246" />
+    <state x="465" y="216" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606620465909">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="446" y="213" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1680.1050/43.23.1877.1057@43.23.1877.1057" timestamp="1606219906650" />
-    <state width="1833" height="290" key="GridCell.Tab.0.bottom" timestamp="1606219986130">
-      <screen x="43" y="23" width="1877" height="1057" />
+    <state x="465" y="216" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606620465909" />
+    <state x="777" y="335" width="424" height="484" key="FileChooserDialogImpl" timestamp="1606620465378">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="777" y="335" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1606620465378" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom" timestamp="1606620796358">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1833" height="290" key="GridCell.Tab.0.bottom/1920.0.1680.1050/43.23.1877.1057@43.23.1877.1057" timestamp="1606219986130" />
-    <state width="1833" height="290" key="GridCell.Tab.0.center" timestamp="1606219986129">
-      <screen x="43" y="23" width="1877" height="1057" />
+    <state width="1807" height="278" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1606620796358" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center" timestamp="1606620796356">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1833" height="290" key="GridCell.Tab.0.center/1920.0.1680.1050/43.23.1877.1057@43.23.1877.1057" timestamp="1606219986129" />
-    <state width="1833" height="290" key="GridCell.Tab.0.left" timestamp="1606219986129">
-      <screen x="43" y="23" width="1877" height="1057" />
+    <state width="1807" height="278" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1606620796356" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left" timestamp="1606620796355">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1833" height="290" key="GridCell.Tab.0.left/1920.0.1680.1050/43.23.1877.1057@43.23.1877.1057" timestamp="1606219986129" />
-    <state width="1833" height="290" key="GridCell.Tab.0.right" timestamp="1606219986130">
-      <screen x="43" y="23" width="1877" height="1057" />
+    <state width="1807" height="278" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1606620796355" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right" timestamp="1606620796357">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1833" height="290" key="GridCell.Tab.0.right/1920.0.1680.1050/43.23.1877.1057@43.23.1877.1057" timestamp="1606219986130" />
+    <state width="1807" height="278" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1606620796357" />
     <state width="1833" height="290" key="GridCell.Tab.1.bottom" timestamp="1606219986132">
       <screen x="43" y="23" width="1877" height="1057" />
     </state>
@@ -146,20 +200,22 @@
       <screen x="43" y="23" width="1877" height="1057" />
     </state>
     <state width="1833" height="290" key="GridCell.Tab.1.right/1920.0.1680.1050/43.23.1877.1057@43.23.1877.1057" timestamp="1606219986132" />
-    <state x="737" y="314" key="SettingsEditor" timestamp="1606219309216">
-      <screen x="43" y="23" width="1877" height="1057" />
+    <state x="710" y="293" key="SettingsEditor" timestamp="1606620906357">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="737" y="314" key="SettingsEditor/1920.0.1680.1050/43.23.1877.1057@43.23.1877.1057" timestamp="1606219309216" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/c13_HasPtr/HasPtr.cpp</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="710" y="293" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1606620906357" />
+    <state x="717" y="399" key="cloudConfig.PluginsDialog" timestamp="1606620792625">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="717" y="399" key="cloudConfig.PluginsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606620792625" />
+    <state x="866" y="399" width="244" height="307" key="cloudConfig.SelfSettingsDialog" timestamp="1606620780893">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="866" y="399" width="244" height="307" key="cloudConfig.SelfSettingsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1606620780893" />
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1606498821526">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="656" y="257" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1606498821526" />
   </component>
 </project>
