@@ -29,14 +29,14 @@
 
 #ifndef TEXTQUERY_H
 #define TEXTQUERY_H
+#include "strVec.h"
 #include <memory>
-#include<iostream>
+#include <iostream>
 #include <string>
 #include <vector>
 #include <map>
 #include <set>
 #include <fstream>
-#include "strVec.h"
 // #include "QueryResult.h"
 
 

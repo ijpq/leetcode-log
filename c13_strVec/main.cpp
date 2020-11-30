@@ -1,7 +1,9 @@
+#include"TextQuery.h"
 #include<iostream>
 #include<string>
 #include<fstream>
-#include"TextQuery.h"
+#include <memory>
+#include"strVec.h"
 using namespace std;
 
 void runQueries(std::ifstream &infile)
@@ -19,5 +21,5 @@ int main()
 {
     std::ifstream file("./file.txt");
     runQueries(file);
-    // return 0;
+    return 0;
 }

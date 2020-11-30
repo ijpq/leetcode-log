@@ -7,7 +7,6 @@
 using namespace std;
 std::allocator<std::string> strVec::alloc;
 
-inline
 strVec::strVec(const strVec& strvec){ // copy constructor
         pair<string*, string*> p = alloc_n_copy(strvec.elements, strvec.cap);
         this->elements = p.first;
@@ -16,14 +15,12 @@ strVec::strVec(const strVec& strvec){ // copy constructor
     };
 
 
-inline
 void strVec::push_back(const string& s){
     chk_n_alloc();
     alloc.construct(first_free++, s);
-    return ;
+    // return ;
 };
 
-inline
 void strVec::free(){
     if (elements){
         for (auto ptr = first_free; ptr != elements; ){
@@ -33,10 +30,8 @@ void strVec::free(){
     }
 }
 
-inline
 strVec::~strVec() { free();}
 
-inline
 void strVec::reallocate(size_t n = 0){
     auto newcapacity = size()? 2*size():1;
     auto newdata = alloc.allocate(newcapacity);
@@ -52,7 +47,6 @@ void strVec::reallocate(size_t n = 0){
     return ;
 }
 
-inline
 strVec& strVec::operator=(const strVec& strvec){
         auto data = alloc_n_copy(strvec.begin(), strvec.end());
         free();
@@ -61,19 +55,16 @@ strVec& strVec::operator=(const strVec& strvec){
         return *this;
     };
 
-inline
 pair<string*, string*> strVec::alloc_n_copy(const string* a, const string* b){
         auto data = alloc.allocate(b-a);
         return {data, uninitialized_copy(a,b,data)};
     }
 
-inline
 void strVec::chk_n_alloc(){
         if (size() == capacity()) 
             reallocate();
     }
 
-inline
 void strVec::reverse(size_t n) {
     if (n <= size() || n <= capacity()) return;
 
@@ -93,7 +84,6 @@ void strVec::reverse(size_t n) {
     return ;
 }
 
-inline
 void strVec::resize(size_t n, const string& s=""){
     // comp with size, rather than capacity().
     if (n == size()) return ;

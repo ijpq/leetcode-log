@@ -29,6 +29,7 @@
 
 #include "TextQuery.h"
 #include "make_plural.h"
+#include "strVec.h"
 
 #include <cstddef>
 #include <memory>

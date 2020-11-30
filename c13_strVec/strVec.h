@@ -55,9 +55,11 @@ public:
 
     size_t size() const {return first_free - elements;}
     size_t capacity() const {return cap-elements;}
-    inline void reverse(size_t);
-    inline void resize(size_t, const string&);
+    void reverse(size_t);
+    void resize(size_t, const string&);
     
 };
+
+
 
 #endif
