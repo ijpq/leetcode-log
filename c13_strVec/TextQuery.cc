@@ -76,7 +76,7 @@ TextQuery::TextQuery(ifstream &is): file(new strVec)
             // if word isn't already in wm, subscripting adds a new entry
             auto &lines = wm[word]; // lines is a shared_ptr 
             if (!lines) // that pointer is null the first time we see word
-                lines.reset(new set<line_no>); // allocate a new set
+                lines.reset(new set<size_t>); // allocate a new set
             lines->insert(n);      // insert this line number
 		}
 	}
@@ -99,7 +99,7 @@ QueryResult
 TextQuery::query(const string &sought) const
 {
 	// we'll return a pointer to this set if we don't find sought
-	static shared_ptr<set<line_no>> nodata(new set<line_no>); 
+	static shared_ptr<set<size_t>> nodata(new set<size_t>); 
 
     // use find and not a subscript to avoid adding words to wm!
     auto loc = wm.find(cleanup_str(sought));

@@ -43,18 +43,12 @@ public:
             cap = strvec.cap;
             strvec.elements = strvec.first_free = strvec.cap = nullptr;
         }
+        return *this;
     }
     strVec& operator=(const strVec& strvec);
     //destructor
     ~strVec();
-
     void push_back(const string& s);
-
-    // void push_back(const string& s){
-    //     chk_n_alloc();
-    //     alloc.construct(first_free++, s);
-    //     return ;
-    // };
 
     string* begin() const {return elements;}
     string* end() const {return first_free;}

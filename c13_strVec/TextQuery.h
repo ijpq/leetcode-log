@@ -30,13 +30,14 @@
 #ifndef TEXTQUERY_H
 #define TEXTQUERY_H
 #include <memory>
+#include<iostream>
 #include <string>
 #include <vector>
 #include <map>
 #include <set>
 #include <fstream>
-#include "QueryResult.h"
 #include "strVec.h"
+// #include "QueryResult.h"
 
 
 /* this version of the query classes includes two
@@ -52,7 +53,7 @@ class QueryResult; // declaration needed for return type in the query function
 
 class TextQuery {
 public:
-	using line_no = std::vector<std::string>::size_type;
+	// using line_no = std::vector<std::string>::size_type;
 	TextQuery(std::ifstream&);
     QueryResult query(const std::string&) const; 
     void display_map();        // debugging aid: print the map
@@ -60,9 +61,30 @@ private:
     std::shared_ptr<strVec> file; // input file
     // maps each word to the set of the lines in which that word appears
     std::map<std::string, 
-	         std::shared_ptr<std::set<line_no>>> wm;  
+	         std::shared_ptr<std::set<size_t>>> wm;  
 
 	// canonicalizes text: removes punctuation and makes everything lower case
     static std::string cleanup_str(const std::string&);
 };
+
+class QueryResult {
+friend std::ostream& print(std::ostream&, const QueryResult&);
+public:
+	// typedef std::vector<std::string>::size_type line_no;
+	typedef std::set<size_t>::const_iterator line_it;
+	QueryResult(std::string s, 
+	            std::shared_ptr<std::set<size_t>> p, 
+	            std::shared_ptr<strVec> f):
+		sought(s), lines(p), file(f) { }
+	std::set<size_t>::size_type size() const  { return lines->size(); }
+	line_it begin() const { return lines->cbegin(); }
+	line_it end() const   { return lines->cend(); }
+	std::shared_ptr<strVec> get_file() { return file; }
+private:
+	std::string sought;  // word this query represents
+	std::shared_ptr<std::set<size_t>> lines; // lines it's on
+	std::shared_ptr<strVec> file;  //input file
+};
+
+std::ostream &print(std::ostream&, const QueryResult&);
 #endif

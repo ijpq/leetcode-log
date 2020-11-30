@@ -34,7 +34,7 @@
 #include <vector>
 #include <set>
 #include <iostream>
-#include "strVec.h"
+// #include "strVec.h"
 
 class QueryResult {
 friend std::ostream& print(std::ostream&, const QueryResult&);

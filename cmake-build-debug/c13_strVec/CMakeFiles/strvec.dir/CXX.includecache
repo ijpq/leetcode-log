@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ketang/Desktop/leetcode-log/c13_strVec/strVec.cpp
+string
+-
+strVec.h
+/Users/ketang/Desktop/leetcode-log/c13_strVec/strVec.h
+memory
+-
+
+/Users/ketang/Desktop/leetcode-log/c13_strVec/strVec.h
+memory
+-
+string
+-
+initializer_list
+-
+

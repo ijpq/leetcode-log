@@ -2,6 +2,8 @@
 #include <string>
 #include "strVec.h"
 #include <memory>
+#include <iostream>
+
 using namespace std;
 std::allocator<std::string> strVec::alloc;
 
@@ -13,8 +15,6 @@ strVec::strVec(const strVec& strvec){ // copy constructor
         this->cap = p.second;
     };
 
-inline
-strVec::~strVec() { free();}
 
 inline
 void strVec::push_back(const string& s){
@@ -32,6 +32,9 @@ void strVec::free(){
         alloc.deallocate(elements, cap-elements); // destroy() has called deconstructor to free the memory. why we call deallocate() to free the memory again?
     }
 }
+
+inline
+strVec::~strVec() { free();}
 
 inline
 void strVec::reallocate(size_t n = 0){
@@ -123,3 +126,11 @@ void strVec::resize(size_t n, const string& s=""){
 }
 
 
+
+// int main(){
+//     cout<<"main function in strVec.cpp"<<endl;
+//     auto *p = new strVec;
+//     string s = "saf";
+//     p->push_back(s);
+//     return 0;
+// }

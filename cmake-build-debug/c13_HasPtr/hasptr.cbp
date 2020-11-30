@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hasptr"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\c13_msgfolder\;CMake Files\c13_constructorexp\;CMake Files\c13_Employee\;CMake Files\c13_HasPtr\;CMake Files\c13_HasPtr2\;CMake Files\c13_String\;CMake Files\c13_strVec\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HasPtr">
+				<Option output="/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/HasPtr" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 HasPtr"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HasPtr/fast">
+				<Option output="/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/HasPtr" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 HasPtr/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_HasPtr/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.cpp">
+			<Option target="HasPtr"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_HasPtr/HasPtr.h">
+			<Option target="HasPtr"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_msgfolder/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c13_msgfolder\"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_constructorexp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c13_constructorexp\"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_Employee/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c13_Employee\"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_HasPtr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c13_HasPtr\"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_HasPtr2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c13_HasPtr2\"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_String/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c13_String\"/>
+		</Unit>
+		<Unit filename="/Users/ketang/Desktop/leetcode-log/c13_strVec/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\c13_strVec\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ketang/Desktop/leetcode-log/c13_String/String.cpp
+String.h
+/Users/ketang/Desktop/leetcode-log/c13_String/String.h
+vector
+-
+
+/Users/ketang/Desktop/leetcode-log/c13_String/String.h
+memory
+-
+iostream
+-
+cstring
+-
+

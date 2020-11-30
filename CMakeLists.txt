@@ -1,7 +1,9 @@
+cmake_minimum_required(VERSION 3.15)
 project(main)
-
+set(CMAKE_CXX_STANDARD 11)
 add_subdirectory(c13_constructorexp)
-add_subdirectory(c13_HasPtr)add_subdirectory(c13_HasPtr2)
+add_subdirectory(c13_HasPtr)
+add_subdirectory(c13_HasPtr2)
 add_subdirectory(c13_Employee)
 add_subdirectory(c13_msgfolder)
 add_subdirectory(c13_String)
