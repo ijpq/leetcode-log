@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/strVec.dir/main.cpp.o CMakeFiles/strVec.dir/strVec.cpp.o CMakeFiles/strVec.dir/TextQuery.cc.o  -o strVec 

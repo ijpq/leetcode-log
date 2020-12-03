@@ -369,6 +369,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include<cstdint>
+
 
 using namespace std;
 
@@ -380,10 +382,10 @@ using namespace std;
 
 
 int main() {
-    char* str = "abd";
-    vector<int> vec{1, 5, 2, 7};
-    char str2[] = "abd";
-    cout<<"h!"<<endl;
+    // char* str = "abd";
+    // vector<int> vec{1, 5, 2, 7};
+    // char str2[] = "abd";
+    // cout<<"h!"<<endl;
     // sort(vec.begin(), vec.end(), myobj);
     // cout << "sort vec: " ;
     // for (auto ele : vec) {
@@ -406,5 +408,17 @@ int main() {
     // for (auto x:b){
     //     cout<<x[0]<<","<<x[1]<<endl;
     // }
+    int8_t a;
+    // while (cin>>a){
+        a = 1;
+        printf("%d\n", a);
+        a = a<<7;
+        printf("%d\n", a);
+        a = 1;
+        a<<8;
+        printf("%d\n", a);
+
+    // }
+
     return 0;
 }

@@ -59,19 +59,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ketang/Desktop/leetcode-log
+CMAKE_SOURCE_DIR = /home/ketang/leetcode-log
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ketang/Desktop/leetcode-log/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ketang/leetcode-log/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,7 +79,7 @@ CMAKE_BINARY_DIR = /Users/ketang/Desktop/leetcode-log/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -90,7 +90,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -100,14 +100,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles /Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_String/CMakeFiles/progress.marks
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles /home/ketang/leetcode-log/cmake-build-debug/c13_String/CMakeFiles/progress.marks
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/clean
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/preinstall
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/preinstall
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 c13_String/CMakeFiles/string.dir/rule:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/CMakeFiles/string.dir/rule
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/CMakeFiles/string.dir/rule
 .PHONY : c13_String/CMakeFiles/string.dir/rule
 
 # Convenience name for target.
@@ -142,7 +142,7 @@ string: c13_String/CMakeFiles/string.dir/rule
 
 # fast build rule for target.
 string/fast:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/build
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/build
 .PHONY : string/fast
 
 String.o: String.cpp.o
@@ -151,7 +151,7 @@ String.o: String.cpp.o
 
 # target to build an object file
 String.cpp.o:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/String.cpp.o
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/String.cpp.o
 .PHONY : String.cpp.o
 
 String.i: String.cpp.i
@@ -160,7 +160,7 @@ String.i: String.cpp.i
 
 # target to preprocess a source file
 String.cpp.i:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/String.cpp.i
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/String.cpp.i
 .PHONY : String.cpp.i
 
 String.s: String.cpp.s
@@ -169,7 +169,7 @@ String.s: String.cpp.s
 
 # target to generate assembly for a file
 String.cpp.s:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/String.cpp.s
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/String.cpp.s
 .PHONY : String.cpp.s
 
 # Help Target
@@ -195,6 +195,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

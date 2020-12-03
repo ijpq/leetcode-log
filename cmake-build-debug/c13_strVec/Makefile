@@ -59,38 +59,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ketang/Desktop/leetcode-log
+CMAKE_SOURCE_DIR = /home/ketang/leetcode-log
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ketang/Desktop/leetcode-log/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ketang/leetcode-log/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,16 +87,27 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles /Users/ketang/Desktop/leetcode-log/cmake-build-debug/c13_strVec/CMakeFiles/progress.marks
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles /home/ketang/leetcode-log/cmake-build-debug/c13_strVec/CMakeFiles/progress.marks
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/clean
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/clean
 .PHONY : clean
 
 # The main clean target
@@ -117,22 +117,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/preinstall
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/preinstall
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 c13_strVec/CMakeFiles/strVec.dir/rule:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/CMakeFiles/strVec.dir/rule
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/CMakeFiles/strVec.dir/rule
 .PHONY : c13_strVec/CMakeFiles/strVec.dir/rule
 
 # Convenience name for target.
@@ -142,7 +142,7 @@ strVec: c13_strVec/CMakeFiles/strVec.dir/rule
 
 # fast build rule for target.
 strVec/fast:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/build
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/build
 .PHONY : strVec/fast
 
 TextQuery.o: TextQuery.cc.o
@@ -151,7 +151,7 @@ TextQuery.o: TextQuery.cc.o
 
 # target to build an object file
 TextQuery.cc.o:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/TextQuery.cc.o
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/TextQuery.cc.o
 .PHONY : TextQuery.cc.o
 
 TextQuery.i: TextQuery.cc.i
@@ -160,7 +160,7 @@ TextQuery.i: TextQuery.cc.i
 
 # target to preprocess a source file
 TextQuery.cc.i:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/TextQuery.cc.i
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/TextQuery.cc.i
 .PHONY : TextQuery.cc.i
 
 TextQuery.s: TextQuery.cc.s
@@ -169,7 +169,7 @@ TextQuery.s: TextQuery.cc.s
 
 # target to generate assembly for a file
 TextQuery.cc.s:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/TextQuery.cc.s
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/TextQuery.cc.s
 .PHONY : TextQuery.cc.s
 
 main.o: main.cpp.o
@@ -178,7 +178,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/main.cpp.o
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -187,7 +187,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/main.cpp.i
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -196,7 +196,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/main.cpp.s
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 strVec.o: strVec.cpp.o
@@ -205,7 +205,7 @@ strVec.o: strVec.cpp.o
 
 # target to build an object file
 strVec.cpp.o:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/strVec.cpp.o
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/strVec.cpp.o
 .PHONY : strVec.cpp.o
 
 strVec.i: strVec.cpp.i
@@ -214,7 +214,7 @@ strVec.i: strVec.cpp.i
 
 # target to preprocess a source file
 strVec.cpp.i:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/strVec.cpp.i
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/strVec.cpp.i
 .PHONY : strVec.cpp.i
 
 strVec.s: strVec.cpp.s
@@ -223,7 +223,7 @@ strVec.s: strVec.cpp.s
 
 # target to generate assembly for a file
 strVec.cpp.s:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/strVec.cpp.s
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/strVec.cpp.s
 .PHONY : strVec.cpp.s
 
 # Help Target
@@ -255,6 +255,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ketang/Desktop/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ketang/leetcode-log/cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

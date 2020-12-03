@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ketang/leetcode-log/c13_Employee/Employee.cpp" "/home/ketang/leetcode-log/cmake-build-debug/c13_Employee/CMakeFiles/employee.dir/Employee.cpp.o"
+  "/home/ketang/leetcode-log/c13_strVec/TextQuery.cc" "/home/ketang/leetcode-log/cmake-build-debug/c13_strVec/CMakeFiles/strVec.dir/TextQuery.cc.o"
+  "/home/ketang/leetcode-log/c13_strVec/main.cpp" "/home/ketang/leetcode-log/cmake-build-debug/c13_strVec/CMakeFiles/strVec.dir/main.cpp.o"
+  "/home/ketang/leetcode-log/c13_strVec/strVec.cpp" "/home/ketang/leetcode-log/cmake-build-debug/c13_strVec/CMakeFiles/strVec.dir/strVec.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

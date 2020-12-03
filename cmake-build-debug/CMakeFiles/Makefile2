@@ -55,19 +55,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
+RM = /home/ketang/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ketang/Desktop/leetcode-log
+CMAKE_SOURCE_DIR = /home/ketang/leetcode-log
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ketang/Desktop/leetcode-log/cmake-build-debug
+CMAKE_BINARY_DIR = /home/ketang/leetcode-log/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -238,14 +238,14 @@ c13_strVec/clean: c13_strVec/CMakeFiles/strVec.dir/clean
 c13_constructorexp/CMakeFiles/Point.dir/all:
 	$(MAKE) $(MAKESILENT) -f c13_constructorexp/CMakeFiles/Point.dir/build.make c13_constructorexp/CMakeFiles/Point.dir/depend
 	$(MAKE) $(MAKESILENT) -f c13_constructorexp/CMakeFiles/Point.dir/build.make c13_constructorexp/CMakeFiles/Point.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Point"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ketang/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Point"
 .PHONY : c13_constructorexp/CMakeFiles/Point.dir/all
 
 # Build rule for subdir invocation for target.
 c13_constructorexp/CMakeFiles/Point.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_constructorexp/CMakeFiles/Point.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : c13_constructorexp/CMakeFiles/Point.dir/rule
 
 # Convenience name for target.
@@ -265,14 +265,14 @@ c13_constructorexp/CMakeFiles/Point.dir/clean:
 c13_HasPtr/CMakeFiles/HasPtr.dir/all:
 	$(MAKE) $(MAKESILENT) -f c13_HasPtr/CMakeFiles/HasPtr.dir/build.make c13_HasPtr/CMakeFiles/HasPtr.dir/depend
 	$(MAKE) $(MAKESILENT) -f c13_HasPtr/CMakeFiles/HasPtr.dir/build.make c13_HasPtr/CMakeFiles/HasPtr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target HasPtr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ketang/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target HasPtr"
 .PHONY : c13_HasPtr/CMakeFiles/HasPtr.dir/all
 
 # Build rule for subdir invocation for target.
 c13_HasPtr/CMakeFiles/HasPtr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_HasPtr/CMakeFiles/HasPtr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : c13_HasPtr/CMakeFiles/HasPtr.dir/rule
 
 # Convenience name for target.
@@ -292,14 +292,14 @@ c13_HasPtr/CMakeFiles/HasPtr.dir/clean:
 c13_HasPtr2/CMakeFiles/hasptr2.dir/all:
 	$(MAKE) $(MAKESILENT) -f c13_HasPtr2/CMakeFiles/hasptr2.dir/build.make c13_HasPtr2/CMakeFiles/hasptr2.dir/depend
 	$(MAKE) $(MAKESILENT) -f c13_HasPtr2/CMakeFiles/hasptr2.dir/build.make c13_HasPtr2/CMakeFiles/hasptr2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target hasptr2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ketang/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target hasptr2"
 .PHONY : c13_HasPtr2/CMakeFiles/hasptr2.dir/all
 
 # Build rule for subdir invocation for target.
 c13_HasPtr2/CMakeFiles/hasptr2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_HasPtr2/CMakeFiles/hasptr2.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : c13_HasPtr2/CMakeFiles/hasptr2.dir/rule
 
 # Convenience name for target.
@@ -319,14 +319,14 @@ c13_HasPtr2/CMakeFiles/hasptr2.dir/clean:
 c13_Employee/CMakeFiles/employee.dir/all:
 	$(MAKE) $(MAKESILENT) -f c13_Employee/CMakeFiles/employee.dir/build.make c13_Employee/CMakeFiles/employee.dir/depend
 	$(MAKE) $(MAKESILENT) -f c13_Employee/CMakeFiles/employee.dir/build.make c13_Employee/CMakeFiles/employee.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target employee"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ketang/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target employee"
 .PHONY : c13_Employee/CMakeFiles/employee.dir/all
 
 # Build rule for subdir invocation for target.
 c13_Employee/CMakeFiles/employee.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_Employee/CMakeFiles/employee.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : c13_Employee/CMakeFiles/employee.dir/rule
 
 # Convenience name for target.
@@ -346,14 +346,14 @@ c13_Employee/CMakeFiles/employee.dir/clean:
 c13_msgfolder/CMakeFiles/message.dir/all:
 	$(MAKE) $(MAKESILENT) -f c13_msgfolder/CMakeFiles/message.dir/build.make c13_msgfolder/CMakeFiles/message.dir/depend
 	$(MAKE) $(MAKESILENT) -f c13_msgfolder/CMakeFiles/message.dir/build.make c13_msgfolder/CMakeFiles/message.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target message"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ketang/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target message"
 .PHONY : c13_msgfolder/CMakeFiles/message.dir/all
 
 # Build rule for subdir invocation for target.
 c13_msgfolder/CMakeFiles/message.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_msgfolder/CMakeFiles/message.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : c13_msgfolder/CMakeFiles/message.dir/rule
 
 # Convenience name for target.
@@ -373,14 +373,14 @@ c13_msgfolder/CMakeFiles/message.dir/clean:
 c13_String/CMakeFiles/string.dir/all:
 	$(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/depend
 	$(MAKE) $(MAKESILENT) -f c13_String/CMakeFiles/string.dir/build.make c13_String/CMakeFiles/string.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target string"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ketang/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target string"
 .PHONY : c13_String/CMakeFiles/string.dir/all
 
 # Build rule for subdir invocation for target.
 c13_String/CMakeFiles/string.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_String/CMakeFiles/string.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : c13_String/CMakeFiles/string.dir/rule
 
 # Convenience name for target.
@@ -400,14 +400,14 @@ c13_String/CMakeFiles/string.dir/clean:
 c13_strVec/CMakeFiles/strVec.dir/all:
 	$(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/depend
 	$(MAKE) $(MAKESILENT) -f c13_strVec/CMakeFiles/strVec.dir/build.make c13_strVec/CMakeFiles/strVec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14 "Built target strVec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ketang/leetcode-log/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14 "Built target strVec"
 .PHONY : c13_strVec/CMakeFiles/strVec.dir/all
 
 # Build rule for subdir invocation for target.
 c13_strVec/CMakeFiles/strVec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 c13_strVec/CMakeFiles/strVec.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ketang/Desktop/leetcode-log/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ketang/leetcode-log/cmake-build-debug/CMakeFiles 0
 .PHONY : c13_strVec/CMakeFiles/strVec.dir/rule
 
 # Convenience name for target.
